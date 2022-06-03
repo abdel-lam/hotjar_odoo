@@ -1,7 +1,7 @@
 <odoo>
     <data>
     <template id="layout_hotjar" inherit_id="website.layout">
-        <xpath expr="//t[@t-if='website and website.google_analytics_key and not editable']" position="before">
+        <xpath expr="//script[@id='tracking_code']" position="before">
             <script type="text/javascript" name="Hotjar">
                 <t t-esc="website.hotjar_analytics_script"/>
             </script>
