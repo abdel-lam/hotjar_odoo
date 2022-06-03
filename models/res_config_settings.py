@@ -10,7 +10,7 @@ class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
     has_hotjar_analytics = fields.Boolean("Hotjar Analytics")
-    hotjar_analytics_script = fields.Text('Hotjar Analytics Script', related='website_id.hotjar_analytics_script')
+    hotjar_analytics_script = fields.Text('Hotjar Analytics Script', related='website_id.hotjar_analytics_script',readonly=False)
 
 
     @api.model
